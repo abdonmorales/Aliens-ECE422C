@@ -1,0 +1,28 @@
+       Welcome to Alien Attack!
+       ------------------------
+
+RipVanWinkle starts with health: 100 speed: 20 attack: 10
+
+Room: Kitchen. RipVanWinkle encounters a Chest Burster
+    Chest Burster - health: 30 speed: 5 attack: 10 speed damage: 24
+RipVanWinkle attacks Chest Burster, causing 10 damage.
+Chest Burster attacks RipVanWinkle, causing 10 damage.
+RipVanWinkle attacks Chest Burster, causing 10 damage.
+Chest Burster attacks RipVanWinkle, causing 10 damage.
+RipVanWinkle attacks Chest Burster, causing 10 damage.
+Chest Burster is defeated!
+RipVanWinkle finds Force Field
+
+Room: Hallway. RipVanWinkle encounters a Predalien
+    Predalien - health: 0 speed: 40 attack: 6 speed damage: 8
+Predalien is defeated!
+RipVanWinkle finds Blaster
+
+Room: Engine Room. RipVanWinkle encounters a Hammerpede
+    Hammerpede - health: 50 speed: 200 attack: 40 speed damage: 100
+Hammerpede attacks RipVanWinkle, causing 40 damage.
+RipVanWinkle attacks Hammerpede, causing 14 damage.
+Hammerpede attacks RipVanWinkle, causing 40 damage.
+RipVanWinkle attacks Hammerpede, causing 14 damage.
+Hammerpede attacks RipVanWinkle, causing 40 damage.
+RipVanWinkle is dead - GAME OVER!

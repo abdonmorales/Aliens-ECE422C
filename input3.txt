@@ -1,0 +1,4 @@
+RipVanWinkle,100,10,20
+Kitchen,Chest Burster,30,10,5,24,Force Field,5,0,10
+Hallway,Predalien,0,6,40,8,Blaster,0,4,5
+Engine Room,Hammerpede,50,40,200,100,Air lock,0,0,0

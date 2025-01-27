@@ -1,0 +1,38 @@
+       Welcome to Alien Attack!
+       ------------------------
+
+Ripley starts with health: 1000 speed: 20 attack: 10
+
+Room: Hallway. Ripley encounters a Xenomorph
+    Xenomorph - health: 20 speed: 40 attack: 6 speed damage: 8
+Xenomorph attacks Ripley, causing 6 damage.
+Ripley attacks Xenomorph, causing 10 damage.
+Xenomorph attacks Ripley, causing 6 damage.
+Ripley attacks Xenomorph, causing 10 damage.
+Xenomorph is defeated!
+Ripley finds Blaster
+
+Room: Break Room. Ripley encounters a Face Hugger
+    Face Hugger - health: 30 speed: 5 attack: 10 speed damage: 24
+Ripley attacks Face Hugger, causing 14 damage.
+Face Hugger attacks Ripley, causing 10 damage.
+Ripley attacks Face Hugger, causing 14 damage.
+Face Hugger attacks Ripley, causing 10 damage.
+Ripley attacks Face Hugger, causing 14 damage.
+Face Hugger is defeated!
+Ripley finds Force Field
+
+Room: Engine Room. Ripley encounters a Queen
+    Queen - health: 50 speed: 200 attack: 40 speed damage: 100
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 14 damage.
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 14 damage.
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 14 damage.
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 14 damage.
+Queen is defeated!
+Ripley finds Escape pod
+
+Ripley wins!
