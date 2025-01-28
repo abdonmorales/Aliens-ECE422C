@@ -3,15 +3,18 @@
  * EID: YOUR EID
  */
 
-/**
- * The main game logic.
- */
-
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-
-public final class Game {
+ /**
+  *
+  *
+  * @author Abdon Morales, am226923,
+  * <a href="abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
+  *
+  * <p>Janurary 28, 2025</p>
+  *
+  * The main game logic.
+  */
+ public final class Game {
   private final Ripley ripley;
   private final List<Room> rooms;
 

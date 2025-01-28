@@ -4,6 +4,12 @@
  */
 
 /**
+ *
+ * @author Abdon Morales, am226923,
+ * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
+ *
+ * <p>Janurary 28, 2025</p>
+ *
  * Ripley is a character that can fight aliens.
  */
 

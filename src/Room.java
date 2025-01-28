@@ -4,6 +4,10 @@
  */
 
 /**
+ *
+ * @author Abdon Morales, am226923,
+ * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
+ *
  * Simple class to hold the room's data
  */
 final class Room 

@@ -3,7 +3,14 @@
  * EID: YOUR EID
  */
 
-/** An object of class Alien represents an alien in the game.  */
+ /**
+  * An object of class Alien represents an alien in the game.
+  *
+  * @author Abdon Morales, am226923,
+  * <a href="abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
+  *
+  * <p>Janurary 28, 2025</p>
+  */
 
 // FILL IN HERE - This declaration may change in your implementation 
 public class Alien {

@@ -1,0 +1,13 @@
+       Welcome to Alien Attack!
+       ------------------------
+
+Ripley starts with health: 100 speed: 20 attack: 10
+
+Room: Engine Room. Ripley encounters a Queen
+    Queen - health: 50 speed: 200 attack: 40 speed damage: 100
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 10 damage.
+Queen attacks Ripley, causing 40 damage.
+Ripley attacks Queen, causing 10 damage.
+Queen attacks Ripley, causing 40 damage.
+Ripley is dead - GAME OVER!
