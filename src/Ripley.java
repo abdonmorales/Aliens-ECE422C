@@ -1,4 +1,4 @@
- /* Author: YOUR NAME
+/* Author: YOUR NAME
  * Date: TODAY'S DATE
  * EID: YOUR EID
  */
@@ -18,6 +18,10 @@
 // This declaration may change in your implementation 
 public class Ripley
 {
+  private int health;
+  private int attack;
+  private int speed;
+  private String name; 
 
   /**
    * Constructor for Ripley
@@ -29,7 +33,11 @@ public class Ripley
    *              only ones that can inflict speed damage; NOT the player.
    */
   public Ripley(String name, int health, int attack, int speed) {
-    //FILL IN YOUR CONSTRUCTOR CODE HERE 
+    //FILL IN YOUR CONSTRUCTOR CODE HERE
+    this.name = name;
+    this.health = health;
+    this.attack = attack;
+    this.speed = speed;
   }
   
   /**
@@ -59,9 +67,29 @@ public class Ripley
    *
    * @return health, returns the current health of Ripley
    */
-  public int getHealth() {
-    return health;
-  }
+  public int getHealth() {return health;}
+
+  /**
+   * Gives information about the player's speed when called using a getter/setter methods.
+   *
+   * @return speed
+   */
+  public int getSpeed() {return speed;}
+
+  /**
+   * This method gives information about the player's attack damage using a getter/setter method.
+   *
+   * @return attack
+   */
+  public int getAttack() {return attack;}
+
+  /**
+   * This method returns the string representation of the Ripley class/object when calling the 
+   * toString() method or the object itself.
+   *
+   * @return name
+   */
+  public String toString() {return name;}
   // FILL IN ANYTHING ELSE YOU NEED HERE
 
 }

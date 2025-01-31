@@ -30,15 +30,20 @@ import java.util.List;
   public Game(Ripley ripley, List<Room> rooms) {
     this.ripley = ripley;
     this.rooms = rooms;
-    System.out.println("\t\t\t Welcome to Alient Attack");
-    System.out.println("\t\t\t ------------------------");
   }
   
   /**
    * This method implements the main loop in the game.
    */
   public void play(){
-       // FILL IN THE MAIN LOOP FOR GAME PLAY HERE 
+       // FILL IN THE MAIN LOOP FOR GAME PLAY HERE
+       protected boolean isRunning = true;
+       while (isRunning) {
+	       System.out.println("\t\t\t Welcome to Alien Attack!");
+	       Sytem.out.println("\t\t\t ------------------------\n");
+	       System.out.println(ripley.toString() + " starts with health: " + ripley.getHealth() 
+			       + " speed: " + ripley.getSpeed() + " attack: " + ripley.getAttack());
+       }
        System.out.println("Game not implemented yet!");
   }
 }
