@@ -12,7 +12,7 @@
  */
 public class GameCharacter {
 
-  private    String name;
+  private String name;
   private int health;
   private int attack;
   private int speed;
@@ -33,14 +33,44 @@ public class GameCharacter {
   }
 
   // FILL IN ANY accessors or mutators that are missing
-  
+
+  /**
+   * This method returns the string representation of the character's class or object when calling
+   * the toString() method or the object itself.
+   *
+   * @return name
+   */
+  public String toString() {return name;}
+
+  /**
+   *
+   * This method gives information about the health status of the character.
+   *
+   * @return health, returns the current health of the character.
+   */
+  public int getHealth() {return health;}
+
+  /**
+   * This method gives information about the character's speed.
+   *
+   * @return speed
+   */
+  public int getSpeed() {return speed;}
+
+  /**
+   * This method gives information about the character's attack damage using a getter/setter method.
+   *
+   * @return attack
+   */
+  public int getAttack() {return attack;}
+
   /**
    * Attacks the given target by reducing its health by the attack value.
    *
    * @param target the target parameter is the character's attempt to hit another player
    */
   public void hit(GameCharacter target) {
-      // FILL IN HERE 
+      // FILL IN HERE
   }
 
   /**
@@ -49,7 +79,8 @@ public class GameCharacter {
    * @param speedDamage is the damage given from a/this character.
    */
   public void slowDown(int speedDamage) {
-      // FILL IN HERE 
+      // FILL IN HERE
+    speed =- speedDamage;
   }
 
   /** 

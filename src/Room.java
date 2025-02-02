@@ -29,9 +29,18 @@ final class Room
    */
   public Room(String name, Alien alien, Item item) {
      // FILL IN HERE
+    this.name = name;
+    this.alien = alien;
+    this.item = item;
   }
 
   //FILL IN ANYTHING ELSE YOU NEED HERE
+
+  public Alien getAlien() {return alien;}
+
+  public Item getItem() {return item;}
+
+  public String toString() {return name;}
 }
 
 

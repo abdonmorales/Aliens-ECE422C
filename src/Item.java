@@ -13,7 +13,7 @@
  * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
  *
  */
-final class Item 
+final class Item
 {
   private String name;
   private int health;
@@ -32,6 +32,11 @@ final class Item
    */
   Item(String name, int health, int attack, int speed) {
       // FILL IN HERE
+      // Will be here for now until, I figure out the rest of the logic.
+      this.name = name;
+      this.health = health;
+      this.attack = attack;
+      this.speed = speed;
   }
   // FILL IN WHATEVER ELSE YOU NEED HERE 
 }

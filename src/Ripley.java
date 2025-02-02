@@ -16,12 +16,8 @@
 
 // FILL IN YOUR IMPLEMENTATION OF THE RIPLEY CLASS HERE 
 // This declaration may change in your implementation 
-public class Ripley
+public class Ripley extends GameCharacter
 {
-  private int health;
-  private int attack;
-  private int speed;
-  private String name; 
 
   /**
    * Constructor for Ripley
@@ -34,10 +30,7 @@ public class Ripley
    */
   public Ripley(String name, int health, int attack, int speed) {
     //FILL IN YOUR CONSTRUCTOR CODE HERE
-    this.name = name;
-    this.health = health;
-    this.attack = attack;
-    this.speed = speed;
+    super(name, health, attack, speed);
   }
   
   /**
@@ -56,40 +49,10 @@ public class Ripley
    * @param speed is the speed of Ripley and set by the instance variable.
    * @return speed, returns the current speed of Ripley
    */
-  public int speed (int speed) {
+  public void speed (int speed) {
     // If (speed > opponent speed) {}
-    return speed;
   }
-
-  /**
-   *
-   * Gives information about the health status of Ripley using a getter/setter method.
-   *
-   * @return health, returns the current health of Ripley
-   */
-  public int getHealth() {return health;}
-
-  /**
-   * Gives information about the player's speed when called using a getter/setter methods.
-   *
-   * @return speed
-   */
-  public int getSpeed() {return speed;}
-
-  /**
-   * This method gives information about the player's attack damage using a getter/setter method.
-   *
-   * @return attack
-   */
-  public int getAttack() {return attack;}
-
-  /**
-   * This method returns the string representation of the Ripley class/object when calling the 
-   * toString() method or the object itself.
-   *
-   * @return name
-   */
-  public String toString() {return name;}
+  
   // FILL IN ANYTHING ELSE YOU NEED HERE
 
 }

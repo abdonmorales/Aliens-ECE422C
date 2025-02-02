@@ -36,7 +36,7 @@ public class GameLoader {
   }
 
   /**
-   * Method for parsing a room  specification
+   * Method for parsing a room specification
    */
   private Room parseRoom(String line) {
     final String[] roomParts = line.split(",");
