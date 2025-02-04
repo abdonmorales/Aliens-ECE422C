@@ -1,15 +1,10 @@
- /* Author: YOUR NAME
- * Date: TODAY'S DATE
- * EID: YOUR EID
- */
-
  /**
   * An object of class Alien represents an alien in the game.
   *
+  * <p>Janurary 28, 2025</p>
   * @author Abdon Morales, am226923,
   * <a href="abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
   *
-  * <p>Janurary 28, 2025</p>
   */
 
 // FILL IN HERE - This declaration may change in your implementation 
@@ -27,7 +22,7 @@ public class Alien extends GameCharacter {
    * @param speedDamage is the parameter for how much damage the alien can inflict on speed.
    *
    */
-   public Alien(String name, int health, int attack, int speed, int speedDamage) {
+   Alien(String name, int health, int attack, int speed, int speedDamage) {
     // FILL IN YOUR CONSTRUCTOR HERE
     super(name, health, attack, speed);
     this.speedDamage = speedDamage;

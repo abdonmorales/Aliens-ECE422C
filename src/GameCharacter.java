@@ -1,8 +1,3 @@
- /* Author: YOUR NAME
- * Date: TODAY'S DATE
- * EID: YOUR EID
- */
-
 /**
  * <p>Represents a character in the game.</p>
  *

@@ -1,8 +1,3 @@
- /* Author: YOUR NAME
- * Date: TODAY'S DATE
- * EID: YOUR EID
- */
-
 /**
  *
  * <p>Simple class to hold the room's data</p>
@@ -21,11 +16,13 @@ final class Room
 
   /**
    *
+   * This is the constructor method for the final class Room(). This also initializes the instance
+   * variables of name, alien, and item for them to be accessible to the class and accessors
+   * methods.
    *
-   *
-   * @param name
-   * @param alien
-   * @param item
+   * @param name, the name of the room
+   * @param alien, the name of the alien in the room
+   * @param item, the name of the item in the room and that the alien is trying to protect.
    */
   public Room(String name, Alien alien, Item item) {
      // FILL IN HERE

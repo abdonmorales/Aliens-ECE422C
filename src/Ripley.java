@@ -1,13 +1,8 @@
-/* Author: YOUR NAME
- * Date: TODAY'S DATE
- * EID: YOUR EID
- */
-
 /**
  *
- * <p>January 28, 2025</p>
- *
  * <p>Ripley is a character that can fight aliens.</p>
+ * 
+ * <p>January 28, 2025</p>
  *
  * @author Abdon Morales, am226923,
  * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
@@ -39,7 +34,7 @@ public class Ripley extends GameCharacter
    * @param alien is the object/class Alien to fight it!
    */
   public void fight(Alien alien) {
-    //FILL IN YOUR FIGHT CODE HERE
+
   }
 
   /**
@@ -47,7 +42,6 @@ public class Ripley extends GameCharacter
    * Speed of Ripley
    *
    * @param speed is the speed of Ripley and set by the instance variable.
-   * @return speed, returns the current speed of Ripley
    */
   public void speed (int speed) {
     // If (speed > opponent speed) {}

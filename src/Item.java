@@ -1,18 +1,14 @@
- /* Author: YOUR NAME
- * Date: TODAY'S DATE
- * EID: YOUR EID
- */
-
 /**
  *
- * <p>January 28, 2025</p>
- *
  * <p>Simple class to hold item data.</p>
+ * 
+ * <p>January 28, 2025</p>
  *
  * @author Abdon Morales, am226923,
  * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
  *
  */
+//final class Item extends GameCharacter
 final class Item
 {
   private String name;
@@ -38,7 +34,10 @@ final class Item
       this.attack = attack;
       this.speed = speed;
   }
-  // FILL IN WHATEVER ELSE YOU NEED HERE 
+  // FILL IN WHATEVER ELSE YOU NEED HERE
+  public String toString() {
+      return name;
+  }
 }
 
 
