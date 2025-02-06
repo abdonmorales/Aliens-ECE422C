@@ -1,7 +1,6 @@
 /**
  *
  * <p>Ripley is a character that can fight aliens.</p>
- * 
  * <p>January 28, 2025</p>
  *
  * @author Abdon Morales, am226923,
@@ -9,8 +8,6 @@
  *
  */
 
-// FILL IN YOUR IMPLEMENTATION OF THE RIPLEY CLASS HERE 
-// This declaration may change in your implementation 
 public class Ripley extends GameCharacter
 {
 
@@ -24,7 +21,6 @@ public class Ripley extends GameCharacter
    *              only ones that can inflict speed damage; NOT the player.
    */
   public Ripley(String name, int health, int attack, int speed) {
-    //FILL IN YOUR CONSTRUCTOR CODE HERE
     super(name, health, attack, speed);
   }
   
@@ -36,7 +32,5 @@ public class Ripley extends GameCharacter
   public void fight(Alien alien) {
     hit(alien);
   }
-  
-  // FILL IN ANYTHING ELSE YOU NEED HERE
 
 }

@@ -1,11 +1,12 @@
- /**
-  * An object of class Alien represents an alien in the game.
-  *
-  * <p>Janurary 28, 2025</p>
-  * @author Abdon Morales, am226923,
-  * <a href="abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
-  *
-  */
+/**
+ * An object of class Alien represents an alien in the game.
+ * {@inheritDoc}
+ *
+ * <p>Janurary 28, 2025</p>
+ * @author Abdon Morales, am226923,
+ * <a href="abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
+ *
+ */
 
 public class Alien extends GameCharacter {
   private final int speedDamage;
@@ -25,12 +26,25 @@ public class Alien extends GameCharacter {
     this.speedDamage = speedDamage;
    }
 
+   /**
+    *
+    * This method is for the alien to fight the opponent, in which this case is Ripley or the
+    * playable character.
+    *
+    * @param ripley
+    */
    public void fight(Ripley ripley) {
        hit(ripley);
        ripley.slowDown(speedDamage);
    }
 
-  public int getSpeedDamage() {
+   /**
+    *
+    * This method gets the speed damage that the alien can do or cause.
+    *
+    * @return speedDamage
+    */
+   public int getSpeedDamage() {
        return speedDamage;
   }
 }

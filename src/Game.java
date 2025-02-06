@@ -1,7 +1,7 @@
 import java.util.List;
  /**
   *
-  * The main game logic.
+  * The main game logic for Aliens.
   *
   * <p>January 28, 2025</p>
   *
@@ -43,7 +43,7 @@ import java.util.List;
            System.out.printf("%7sWelcome to Alien Attack!\n","");
 	       System.out.printf("%7s------------------------\n","");
            // This println() should be okay based on the discussion during recitation.
-	       System.out.println(ripley.toString() + " starts with health: " + ripley.getHealth() 
+	       System.out.println(ripley.getName() + " starts with health: " + ripley.getHealth() 
 			       + " speed: " + ripley.getSpeed() + " attack: " + ripley.getAttack());
 
            /*
@@ -52,14 +52,15 @@ import java.util.List;
             */
            for(int numRooms = 0; numRooms < rooms.size(); numRooms++) {
                Alien alien = rooms.get(numRooms).getAlien();
-               String room = rooms.get(numRooms).toString();
+               String room = rooms.get(numRooms).getName();
                Item item = rooms.get(numRooms).getItem();
                // Ask if the alien will be null or if it would be 0 as initialized in the inputX.txt
-               //if (alien.toString() == null) {System.out.println(ripley + " finds " + item);}
-               System.out.println("\nRoom: " + room + ". " + ripley + " encounters a " + alien);
-               System.out.printf("%4s" + alien + " - health: " + alien.getHealth() + " speed: "
-                       + alien.getSpeed() + " attack: " + alien.getAttack() + " speed damage: "
-                       + alien.getSpeedDamage(), "");
+               //if (alien.getName() == null) {System.out.println(ripley + " finds " + item);}
+               System.out.println("\nRoom: " + room + ". " + ripley.getName() + " encounters a " +
+                       alien.getName());
+               System.out.printf("%4s" + alien.getName() + " - health: " + alien.getHealth() +
+                       " speed: " + alien.getSpeed() + " attack: " + alien.getAttack() +
+                       " speed damage: " + alien.getSpeedDamage(), "");
                // Would I need to implement another while loop?
 //               while (ripley.getHealth() != 0 || alien.getHealth() != 0){
 //                   // TODO: Implement main game logic here.
@@ -76,11 +77,11 @@ import java.util.List;
                /*
                 * Checks if the hero/user character is dead, the print this message and break
                 */
-               if (ripley.getHealth() == 0) {
-                   System.out.println("\n" + ripley + "is dead - GAME OVER");
+               if (ripley.isDead()) {
+                   System.out.println("\n" + ripley.getName() + "is dead - GAME OVER");
                    break;
                } else {
-                   System.out.println("\n" + ripley + " finds " + item.toString());
+                   System.out.println("\n" + ripley.getName() + " finds " + item.getName());
                }
 
            }
@@ -88,7 +89,7 @@ import java.util.List;
            isRunning = false;
        }
 
-       if (ripley.getHealth() != 0) {System.out.println("\n" + ripley + " wins!");}
+       if (ripley.isAlive()) {System.out.println("\n" + ripley.getName() + " wins!");}
   }
 
   // Create a tester method for debugging and rigorous testing

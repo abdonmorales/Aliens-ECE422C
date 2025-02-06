@@ -63,8 +63,8 @@ public class GameCharacter {
    * @param target the target parameter is the character's attempt to hit another player
    */
   public void hit(GameCharacter target) {
-      // FILL IN HERE
-    target.health = target.getHealth() - attack;
+    System.out.printf("%s attacks %s, causing %d damage", name, target.getName(), attack);
+    target.health -= attack;
   }
 
   /**
@@ -86,7 +86,7 @@ public class GameCharacter {
    * @param speedDamage is the damage given from a/this character.
    */
   public void slowDown(int speedDamage) {
-      speed =- speedDamage;
+      speed -= speedDamage;
   }
 
   /** 
@@ -95,6 +95,8 @@ public class GameCharacter {
    * @param item is the item the character uses or interacts with.
    */ 
   public void useItem(Item item) {
-      //FILL IN HERE 
+    health += item.getHealth();
+    attack += item.getAttack();
+    speed += item.getSpeed();
   }
 }
