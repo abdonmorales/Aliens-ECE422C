@@ -37,30 +37,41 @@ import java.util.List;
        /*
         * Uses a boolean true/false trip, to know when to end the game and exit [flagging].
         */
+      // With the introduction of the inner while loop, this brings the question if the outer
+      // while loop is useful.
        while (isRunning) {
            System.out.printf("%7sWelcome to Alien Attack!\n","");
 	       System.out.printf("%7s------------------------\n","");
+           // This println() should be okay based on the discussion during recitation.
 	       System.out.println(ripley.toString() + " starts with health: " + ripley.getHealth() 
 			       + " speed: " + ripley.getSpeed() + " attack: " + ripley.getAttack());
 
            /*
-            * Iterates through the list of rooms, dependent on the text file that provides that information.
+            * Iterates through the list of rooms, dependent on the text file that provides that
+            * information.
             */
            for(int numRooms = 0; numRooms < rooms.size(); numRooms++) {
                Alien alien = rooms.get(numRooms).getAlien();
                String room = rooms.get(numRooms).toString();
                Item item = rooms.get(numRooms).getItem();
                // Ask if the alien will be null or if it would be 0 as initialized in the inputX.txt
-               if (alien.toString() == null) {System.out.println(ripley + " finds " + item);}
+               //if (alien.toString() == null) {System.out.println(ripley + " finds " + item);}
                System.out.println("\nRoom: " + room + ". " + ripley + " encounters a " + alien);
                System.out.printf("%4s" + alien + " - health: " + alien.getHealth() + " speed: "
                        + alien.getSpeed() + " attack: " + alien.getAttack() + " speed damage: "
                        + alien.getSpeedDamage(), "");
                // Would I need to implement another while loop?
-               if (alien.getSpeed() > ripley.getSpeed()) {
-                   // Here the begin the attack
-               }
-               //System.out.println(ripley + " finds " + item.toString());
+//               while (ripley.getHealth() != 0 || alien.getHealth() != 0){
+//                   // TODO: Implement main game logic here.
+//                   if (alien.getSpeed() > ripley.getSpeed()) {
+//                       // Here the begin the attack
+//                       System.out.println(alien + " attacks " + ripley + ", causing " + );
+//                       alien.hit(ripley);
+//                   } else {
+//                       System.out.println(ripley + " attacks " + alien);
+//                       ripley.hit(alien);
+//                   }
+//               }
 
                /*
                 * Checks if the hero/user character is dead, the print this message and break
@@ -68,14 +79,19 @@ import java.util.List;
                if (ripley.getHealth() == 0) {
                    System.out.println("\n" + ripley + "is dead - GAME OVER");
                    break;
+               } else {
+                   System.out.println("\n" + ripley + " finds " + item.toString());
                }
 
            }
+           // This implementation might seem excessive
            isRunning = false;
        }
 
        if (ripley.getHealth() != 0) {System.out.println("\n" + ripley + " wins!");}
   }
+
+  // Create a tester method for debugging and rigorous testing
 }
 
 

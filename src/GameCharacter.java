@@ -27,33 +27,31 @@ public class GameCharacter {
     this.speed = speed;
   }
 
-  // FILL IN ANY accessors or mutators that are missing
-
   /**
-   * This method returns the string representation of the character's class or object when calling
-   * the toString() method or the object itself.
+   * This method get the name of the character.
    *
    * @return name
    */
-  public String toString() {return name;}
+  public String getName() {return name;}
 
   /**
    *
-   * This method gives information about the health status of the character.
+   * This method gets the information about the health status of the character.
    *
    * @return health, returns the current health of the character.
    */
   public int getHealth() {return health;}
 
   /**
-   * This method gives information about the character's speed.
+   * This method gets the information about the character's speed.
    *
    * @return speed
    */
   public int getSpeed() {return speed;}
 
   /**
-   * This method gives information about the character's attack damage using a getter/setter method.
+   * This method gets the information about the character's attack damage using a getter/setter
+   * method.
    *
    * @return attack
    */
@@ -66,16 +64,29 @@ public class GameCharacter {
    */
   public void hit(GameCharacter target) {
       // FILL IN HERE
+    target.health = target.getHealth() - attack;
   }
 
+  /**
+   * This method checks if the character is dead when his health is greater than 0.
+   *
+   * @return true or false, as it's dependent on the return of health > 0.
+   */
+  public boolean isAlive() {return health > 0;}
+
+  /**
+   * This method checks if the character is dead
+   *
+   * @return true or false, based on what health <= 0 returns.
+   */
+  public boolean isDead() {return health <= 0;}
   /**
    * Reduces the speed of the character by the given amount.
    *
    * @param speedDamage is the damage given from a/this character.
    */
   public void slowDown(int speedDamage) {
-      // FILL IN HERE
-    speed =- speedDamage;
+      speed =- speedDamage;
   }
 
   /** 

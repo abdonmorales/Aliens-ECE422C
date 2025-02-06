@@ -8,9 +8,9 @@
  * <a href="mailto:abdonm@cs.utexas.edu">abdonm@cs.utexas.edu</a>
  *
  */
-//final class Item extends GameCharacter
 final class Item
 {
+  // Would these be final?
   private String name;
   private int health;
   private int attack;
@@ -27,17 +27,42 @@ final class Item
    * @param speed is the parameter if the item provides a type of boost for the player in speed.
    */
   Item(String name, int health, int attack, int speed) {
-      // FILL IN HERE
-      // Will be here for now until, I figure out the rest of the logic.
+      // the constructor is somehow a final method, but IntelliJ throws an error.
       this.name = name;
       this.health = health;
       this.attack = attack;
       this.speed = speed;
   }
-  // FILL IN WHATEVER ELSE YOU NEED HERE
-  public String toString() {
-      return name;
-  }
+
+  /**
+   * 
+   * This method gets the information about the health of the item, and access outside the class.
+   * 
+   * @return health
+   */
+  public int getHealth() {return health;}
+
+    /**
+     * This method gets the attack damage of the item
+     *
+     * @return attack
+     */
+  public int getAttack() {return attack;}
+
+    /**
+     * This method gets the information about the speed of the item
+     *
+     * @return speed
+     */
+  public int getSpeed() {return speed;}
+
+  /**
+   * 
+   * The method gets the name of the item.
+   * 
+   * @return name
+   */
+  public String getName() {return name;}
 }
 
 

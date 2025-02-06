@@ -25,7 +25,8 @@ final class Room
    * @param item, the name of the item in the room and that the alien is trying to protect.
    */
   public Room(String name, Alien alien, Item item) {
-     // FILL IN HERE
+    // This method as well is supposed to be final, but IntelliJ throws the same error as the
+    // Item() class.
     this.name = name;
     this.alien = alien;
     this.item = item;
@@ -33,11 +34,28 @@ final class Room
 
   //FILL IN ANYTHING ELSE YOU NEED HERE
 
+  /**
+   * This method gets the information of the alien in the room and accesses to the alien()'s method
+   * to another method via a getter call.
+   *
+   * @return alien
+   */
   public Alien getAlien() {return alien;}
 
+  /**
+   * This method gets information of the item in the room and access to the item's methods via a
+   * getter/setter call, which in this case is only getter methods.
+   *
+   * @return item
+   */
   public Item getItem() {return item;}
 
-  public String toString() {return name;}
+  /**
+   * This method gets the name of the room
+   *
+   * @return name
+   */
+  public String getName() {return name;}
 }
 
 

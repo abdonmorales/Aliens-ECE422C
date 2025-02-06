@@ -34,17 +34,7 @@ public class Ripley extends GameCharacter
    * @param alien is the object/class Alien to fight it!
    */
   public void fight(Alien alien) {
-
-  }
-
-  /**
-   *
-   * Speed of Ripley
-   *
-   * @param speed is the speed of Ripley and set by the instance variable.
-   */
-  public void speed (int speed) {
-    // If (speed > opponent speed) {}
+    hit(alien);
   }
   
   // FILL IN ANYTHING ELSE YOU NEED HERE

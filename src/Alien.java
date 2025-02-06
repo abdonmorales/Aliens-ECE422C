@@ -7,10 +7,8 @@
   *
   */
 
-// FILL IN HERE - This declaration may change in your implementation 
 public class Alien extends GameCharacter {
-  // FILL IN YOUR INSTANCE VARIABLES HERE
-  private int speedDamage;
+  private final int speedDamage;
   
   /**
    * Constructor: an instance with a name, health, attack, speed, and damage
@@ -22,13 +20,15 @@ public class Alien extends GameCharacter {
    * @param speedDamage is the parameter for how much damage the alien can inflict on speed.
    *
    */
-   Alien(String name, int health, int attack, int speed, int speedDamage) {
-    // FILL IN YOUR CONSTRUCTOR HERE
+   public Alien(String name, int health, int attack, int speed, int speedDamage) {
     super(name, health, attack, speed);
     this.speedDamage = speedDamage;
    }
-  
-  // FILL IN OTHER METHODS HERE
+
+   public void fight(Ripley ripley) {
+       hit(ripley);
+       ripley.slowDown(speedDamage);
+   }
 
   public int getSpeedDamage() {
        return speedDamage;
