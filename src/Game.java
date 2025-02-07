@@ -54,36 +54,28 @@ import java.util.List;
                Alien alien = rooms.get(numRooms).getAlien();
                String room = rooms.get(numRooms).getName();
                Item item = rooms.get(numRooms).getItem();
-               // Ask if the alien will be null or if it would be 0 as initialized in the inputX.txt
-               //if (alien.getName() == null) {System.out.println(ripley + " finds " + item);}
                System.out.println("\nRoom: " + room + ". " + ripley.getName() + " encounters a " +
                        alien.getName());
                System.out.printf("%4s" + alien.getName() + " - health: " + alien.getHealth() +
                        " speed: " + alien.getSpeed() + " attack: " + alien.getAttack() +
                        " speed damage: " + alien.getSpeedDamage(), "");
-               // Would I need to implement another while loop?
-//               while (ripley.getHealth() != 0 || alien.getHealth() != 0){
-//                   // TODO: Implement main game logic here.
-//                   if (alien.getSpeed() > ripley.getSpeed()) {
-//                       // Here the begin the attack
-//                       System.out.println(alien + " attacks " + ripley + ", causing " + );
-//                       alien.hit(ripley);
-//                   } else {
-//                       System.out.println(ripley + " attacks " + alien);
-//                       ripley.hit(alien);
-//                   }
-//               }
-
                /*
-                * Checks if the hero/user character is dead, the print this message and break
+                * Checks if the player is dead, but we still need to load up that
                 */
                if (ripley.isDead()) {
                    System.out.println("\n" + ripley.getName() + "is dead - GAME OVER");
                    break;
-               } else {
-                   System.out.println("\n" + ripley.getName() + " finds " + item.getName());
                }
-
+               // TODO: Implement logic here for the fighting mechanics.
+               /*
+                * Checks if the alien is dead, then it prints the message that the alien is defeated
+                * and that the player has found the item.
+                */
+                if (alien.isDead()) {
+                    System.out.println("\n"+alien.getName() + " is defeated.");
+                    System.out.println(ripley.getName() + " finds " + item.getName());
+                    ripley.useItem(item);
+                }
            }
            // This implementation might seem excessive
            isRunning = false;
@@ -92,7 +84,6 @@ import java.util.List;
        if (ripley.isAlive()) {System.out.println("\n" + ripley.getName() + " wins!");}
   }
 
-  // Create a tester method for debugging and rigorous testing
 }
 
 
