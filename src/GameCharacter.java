@@ -63,7 +63,8 @@ public class GameCharacter {
    * @param target the target parameter is the character's attempt to hit another player
    */
   public void hit(GameCharacter target) {
-    System.out.printf("%s attacks %s, causing %d damage", name, target.getName(), attack);
+    System.out.printf("%s attacks %s, causing %d damage.\n", this.getName(), target.getName(),
+            this.getAttack());
     target.health -= attack;
   }
 

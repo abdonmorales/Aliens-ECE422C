@@ -5,7 +5,7 @@
  */
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class GameLoader {
    * Method called to parse entire file 
    */
   public Game loadGame(String fileName) throws IOException {
-          List<String> gameLines = Files.readAllLines(Path.of(fileName));
+          List<String> gameLines = Files.readAllLines(Paths.get(fileName));
     final Ripley ripley = parseRipley(gameLines.remove(0));
           List<Room> rooms = new ArrayList<Room>();
           for (String line : gameLines) 

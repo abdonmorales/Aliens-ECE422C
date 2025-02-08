@@ -12,6 +12,7 @@ public class Aliens {
       System.exit(0);
     }
     /** Load the game parameters and start play */
-    new GameLoader().loadGame(args[0]).play();
+    //new GameLoader().loadGame(args[0]).play();
+        new GameLoader().loadGame(args[0]).playTester();
 	}
 }
