@@ -92,51 +92,6 @@ public final class Game {
             }
         }
     }
-
-    /**
-     * This is a test method for the play() method for experimentation and making sure to merge the
-     * changes into the play() method after rigorous testing.
-     */
-//    public void playTester() {
-//        System.out.printf("%7sWelcome to Alien Attack!\n", "");
-//        System.out.printf("%7s------------------------\n", "");
-//        System.out.println(ripley.getName() + " starts with health: " + ripley.getHealth()
-//                + " speed: " + ripley.getSpeed() + " attack: " + ripley.getAttack());
-//        for (int numRooms = 0; numRooms < rooms.size(); numRooms++) {
-//            Room room = rooms.get(numRooms);
-//            final Alien alien = room.getAlien();
-//            System.out.println("\nRoom: " + room .getName()+ ". " + ripley.getName() +
-//                    " encounters a " + alien.getName());
-//            System.out.printf("%4s" + alien.getName() + " - health: " + alien.getHealth() +
-//                    " speed: " + alien.getSpeed() + " attack: " + alien.getAttack() +
-//                    " speed damage: " + alien.getSpeedDamage() + "\n", "");
-//
-//            boolean ripleyTurn = (alien.getSpeed() >= ripley.getSpeed()) ? false : true;
-//            while (true) {
-//                if (ripley.isDead()) {
-//                    System.out.println("\n" + ripley.getName() + " is dead - GAME OVER");
-//                    return;
-//                }
-//                if (alien.isDead() && ripley.isAlive()) {
-//                    System.out.println("\n" + alien.getName() + " is defeated.");
-//                    final Item item = rooms.get(numRooms).getItem();
-//                    System.out.println(ripley.getName() + " finds " + item.getName());
-//                    ripley.useItem(item);
-//                    break;
-//                }
-//                if (ripleyTurn) {
-//                    ripley.fight(alien);
-//                } else {
-//                    alien.fight(ripley);
-//                }
-//                ripleyTurn = !ripleyTurn;
-//            }
-//            if (numRooms == rooms.size()-1 && ripley.isAlive()) {
-//                System.out.println("\n" + ripley.getName() + " wins!");
-//            }
-//        }
-//    }
-
 }
 
 
