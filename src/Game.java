@@ -42,7 +42,7 @@ public final class Game {
         for (int numRooms = 0; numRooms < rooms.size(); numRooms++) {
             Alien alien = rooms.get(numRooms).getAlien();
             String room = rooms.get(numRooms).getName();
-            boolean ripleyTurn = (alien.getSpeed() >= ripley.getSpeed()) ? false : true;
+            boolean ripleyTurn = alien.getSpeed() < ripley.getSpeed();
             System.out.println("\nRoom: " + room + ". " + ripley.getName() + " encounters a " +
                     alien.getName());
             System.out.printf("%4s" + alien.getName() + " - health: " + alien.getHealth() +
