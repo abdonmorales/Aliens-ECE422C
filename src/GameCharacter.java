@@ -28,9 +28,9 @@ public class GameCharacter {
   }
 
   /**
-   * This method get the name of the character.
+   * This method gets the name of the character.
    *
-   * @return name
+   * @return name, returns the name of the game character created.
    */
   public String getName() {return name;}
 
@@ -45,7 +45,7 @@ public class GameCharacter {
   /**
    * This method gets the information about the character's speed.
    *
-   * @return speed
+   * @return speed, returns the speed of the game character created.
    */
   public int getSpeed() {return speed;}
 
@@ -53,14 +53,14 @@ public class GameCharacter {
    * This method gets the information about the character's attack damage using a getter/setter
    * method.
    *
-   * @return attack
+   * @return attack, returns the attack damage that the new character can cause.
    */
   public int getAttack() {return attack;}
 
   /**
    * Attacks the given target by reducing its health by the attack value.
    *
-   * @param target the target parameter is the character's attempt to hit another player
+   * @param target, the target parameter is the character's attempt to hit another player
    */
   public void hit(GameCharacter target) {
     System.out.printf("%s attacks %s, causing %d damage.\n", this.getName(), target.getName(),
@@ -84,7 +84,7 @@ public class GameCharacter {
   /**
    * Reduces the speed of the character by the given amount.
    *
-   * @param speedDamage is the damage given from a/this character.
+   * @param speedDamage is the amount of speed damage given from a/this character.
    */
   public void slowDown(int speedDamage) {
       speed -= speedDamage;
@@ -93,7 +93,7 @@ public class GameCharacter {
   /** 
    * Increases character's attributes based on those of the item found.
    *
-   * @param item is the item the character uses or interacts with.
+   * @param item is the item the character uses or interacts with when found.
    */ 
   public void useItem(Item item) {
     health += item.getHealth();

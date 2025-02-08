@@ -1,6 +1,6 @@
 /**
  *
- * <p>Simple class to hold the room's data</p>
+ * <p>Simple class to hold the room's data.</p>
  *
  * <p>January 29, 2025</p>
  *
@@ -20,25 +20,21 @@ final class Room
    * variables of name, alien, and item for them to be accessible to the class and accessors
    * methods.
    *
-   * @param name, the name of the room
-   * @param alien, the name of the alien in the room
-   * @param item, the name of the item in the room and that the alien is trying to protect.
+   * @param name, the name of the room.
+   * @param alien, the alien [the alien object] in the room.
+   * @param item, the item [item object] in the room that the alien is trying to protect.
    */
   public Room(String name, Alien alien, Item item) {
-    // This method as well is supposed to be final, but IntelliJ throws the same error as the
-    // Item() class.
     this.name = name;
     this.alien = alien;
     this.item = item;
   }
 
-  //FILL IN ANYTHING ELSE YOU NEED HERE
-
   /**
    * This method gets the information of the alien in the room and accesses to the alien()'s method
    * to another method via a getter call.
    *
-   * @return alien
+   * @return alien, returns the alien [or the alien object].
    */
   public Alien getAlien() {return alien;}
 
@@ -46,14 +42,14 @@ final class Room
    * This method gets information of the item in the room and access to the item's methods via a
    * getter/setter call, which in this case is only getter methods.
    *
-   * @return item
+   * @return item, returns the item [or the item object].
    */
   public Item getItem() {return item;}
 
   /**
-   * This method gets the name of the room
+   * This method gets the name of the room.
    *
-   * @return name
+   * @return name, returns the name of the room.
    */
   public String getName() {return name;}
 }

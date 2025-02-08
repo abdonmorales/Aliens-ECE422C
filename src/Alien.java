@@ -31,7 +31,7 @@ public class Alien extends GameCharacter {
     * This method is for the alien to fight the opponent, in which this case is Ripley or the
     * playable character.
     *
-    * @param ripley
+    * @param ripley, is the Ripley object, for the alien to have access and fight Ripley/player.
     */
    public void fight(Ripley ripley) {
        hit(ripley);
@@ -42,7 +42,8 @@ public class Alien extends GameCharacter {
     *
     * This method gets the speed damage that the alien can do or cause.
     *
-    * @return speedDamage
+    * @return speedDamage, returns the amount of speed damage that the alien can cause against
+    *                      the player
     */
    public int getSpeedDamage() {
        return speedDamage;

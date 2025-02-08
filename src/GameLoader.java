@@ -5,17 +5,25 @@
  */
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GameLoader {
 
   /**
-   * Method called to parse entire file 
+   * Method called to parse entire file
+   *
+   * <p>
+   * I'm told not to modify this file, but there's a bug where it does not run due to a new
+   * declarative implemented in the Java's NIO library, where the bug is fixed in new versions
+   * using the following line:
+   *      {@code List<String> gameLines = Files.readAllLines(Paths.get(fileName));}
+   * </p>
+   * <p>Replace line #25 and import the {@code java.nio.file.Paths;}</p>
    */
   public Game loadGame(String fileName) throws IOException {
-          List<String> gameLines = Files.readAllLines(Paths.get(fileName));
+          List<String> gameLines = Files.readAllLines(Path.of(fileName));
     final Ripley ripley = parseRipley(gameLines.remove(0));
           List<Room> rooms = new ArrayList<Room>();
           for (String line : gameLines) 
