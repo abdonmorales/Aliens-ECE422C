@@ -10,7 +10,6 @@
  */
 final class Item
 {
-  // Would these be final?
   private String name;
   private int health;
   private int attack;
