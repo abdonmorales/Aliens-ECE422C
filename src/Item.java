@@ -27,7 +27,6 @@ final class Item
    * @param speed is the parameter if the item provides a type of boost for the player in speed.
    */
   Item(String name, int health, int attack, int speed) {
-      // the constructor is somehow a final method, but IntelliJ throws an error.
       this.name = name;
       this.health = health;
       this.attack = attack;

@@ -21,7 +21,7 @@ public class Alien extends GameCharacter {
    * @param speedDamage is the parameter for how much damage the alien can inflict on speed.
    *
    */
-   public Alien(String name, int health, int attack, int speed, int speedDamage) {
+   Alien(String name, int health, int attack, int speed, int speedDamage) {
     super(name, health, attack, speed);
     this.speedDamage = speedDamage;
    }
